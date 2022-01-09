@@ -1,0 +1,114 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+html{
+    font-size: 62.5%;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(177, 199, 241);
+    color: mintcream;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(mg-cthu--1h_NN3nqzI-unsplash.jpg);
+}
+
+.calender{
+    width: 45rem;
+    height: 52rem;
+    background-color: rgb(19, 7, 128);
+    box-shadow: 0 0.5rem 1rem rgb(187, 78, 71);
+    background-image: url(cropped-720-832-986633.jpg);
+}
+
+.month{
+    width: 100%;
+    height: 12rem;
+    background-color:rgb(79, 209, 198) ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.2rem;
+    text-align: center;
+    text-shadow: 0 0.3rem 0.5rem rgb(111, 195, 216);
+    background-image: url(cropped-720-832-986633.jpg);
+   
+}
+
+.month{
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+
+}
+
+.month h3{
+    font-size: 3rem;
+    font-weight: 400;
+    letter-spacing: 0.2rem;
+    margin-bottom: 1rem;
+}
+
+.weekdays{
+    width: 100%;
+    height: 5rem;
+    padding: 0 0.4rem;
+    display: flex;
+    align-items: center;
+}
+
+.weekdays div{
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+    width: calc(44.2rem/7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0 0.3rem 0.5rem rgb(111, 195, 216);
+    
+}
+
+.days{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.2rem;
+    
+
+}
+
+.days div{
+    font-size: 1.4rem;
+    margin: 0.3rem;
+    width: calc(40.2rem/7);
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.2s;
+    border: 0.1rem solid cornsilk;
+}
+
+.prev-date,
+.next-date{
+    opacity: 0.4;
+}
+
+.today{
+    background-color: rgb(79, 209, 198);
+    color: rgb(7, 9, 119);
+}
+
+.days div:hover:not(today){
+    background-color: rgb(218, 160, 85);
+    border: 0.2rem solid rgb(255, 166, 0);
+    cursor: pointer;
+}
